@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Shopping Cart</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 30px;
+        }
+       .container {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #f8f8f8;
+            border-radius: 6px;
+        }
+
+        .info {
+            font-size: 16px;
+        }
+
+        .note {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #eee;
+            border-radius: 6px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Smart Shopping Cart</h1>
+
+        <p>
+            This project calculates product subtotals, discounts,
+            GST and final payable amount.
+        </p>
+
+        <h2>Products</h2>
+
+        <div class="product">
+            <div class="info">
+                <strong>Notebook</strong><br>
+                Price: ₹60<br>
+                Quantity: 3
+            </div>
+
+            <div>
+                Subtotal: ₹180
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="info">
+                <strong>Pen</strong><br>
+                Price: ₹10<br>
+                Quantity: 5
+            </div>
+
+            <div>
+                Subtotal: ₹50
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="info">
+                <strong>Bag</strong><br>
+                Price: ₹800<br>
+                Quantity: 1
+            </div>
+
+            <div>
+                Subtotal: ₹800
+            </div>
+        </div>
+
+        <div class="note">
+            <strong>Final Billing Details</strong>
+            <p>Open the browser Console (F12) to view the complete receipt.</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
