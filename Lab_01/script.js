@@ -1,7 +1,4 @@
-
-// ==========================================
 // TASK 3 - JAVASCRIPT OUTPUT
-// ==========================================
 
 // Method 1: console.log()
 console.log("Hello from JavaScript!");
@@ -12,10 +9,7 @@ alert("Welcome to JavaScript Lab!");
 // Method 3: document.write()
 document.write("JavaScript Lab 01 is running successfully.");
 
-
-// ==========================================
 // TASK 5 - VARIABLES
-// ==========================================
 
 let studentName = "Aadya Gupta";
 let scholarNumber = "YOUR_SCHOLAR_NUMBER";
@@ -30,10 +24,8 @@ console.log("Semester:", semester);
 console.log("Course:", course);
 console.log("College Name:", collegeName);
 
-
-// ==========================================
 // TASK 6 - DATA TYPES
-// ==========================================
+
 
 // String
 let name = "Aadya Gupta";
@@ -57,14 +49,9 @@ console.log("Data Type of isStudent:", typeof isStudent);
 console.log("Data Type of result:", typeof result);
 console.log("Data Type of value:", typeof value);
 
-
-// ==========================================
 // TASK 7 - STUDENT INTRODUCTION
-// ==========================================
 
-console.log("=================================");
-console.log("       STUDENT INTRODUCTION");
-console.log("=================================");
+console.log("      STUDENT INTRODUCTION");
 
 console.log("Name       : " + studentName);
 console.log("Scholar No.: " + scholarNumber);
@@ -72,5 +59,3 @@ console.log("Course     : " + course);
 console.log("Semester   : V");
 console.log("College    : DSVV");
 console.log("Goal       : Become a Full Stack Developer");
-
-console.log("=================================");

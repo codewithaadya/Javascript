@@ -1,8 +1,7 @@
-// ==========================================
-// PART 1 - HOISTING WITH var
-// ==========================================
 
-console.log("========== PART 1: HOISTING WITH var ==========");
+// PART 1 - HOISTING WITH var
+
+console.log(" PART 1: HOISTING WITH var");
 
 // Task 1.1
 console.log(city);
@@ -44,11 +43,10 @@ var food = "Pizza";
 console.log(food);
 
 
-// ==========================================
-// PART 2 - FUNCTION HOISTING
-// ==========================================
 
-console.log("========== PART 2: FUNCTION HOISTING ==========");
+// PART 2 - FUNCTION HOISTING
+
+console.log(" PART 2: FUNCTION HOISTING ");
 
 // Function declaration
 console.log(square(4));
@@ -135,11 +133,10 @@ function goToCollege() {
 }
 
 
-// ==========================================
-// PART 3 - let, const AND TDZ
-// ==========================================
 
-console.log("========== PART 3: let, const AND TDZ ==========");
+// PART 3 - let, const AND TDZ
+
+console.log("PART 3: let, const AND TDZ");
 
 
 // Task 3.1
@@ -199,11 +196,11 @@ function detectD() {
 }
 
 
-// ==========================================
-// PART 4 - FIRST CLOSURE
-// ==========================================
 
-console.log("========== PART 4: CLOSURES ==========");
+// PART 4 - FIRST CLOSURE
+
+
+console.log("PART 4: CLOSURES");
 
 
 // Task 4.1 - Counter
@@ -284,12 +281,10 @@ console.log(friendOne());
 console.log(friendTwo());
 console.log(friendTwo());
 
-
-// ==========================================
 // PART 5 - PRIVATE DATA WITH CLOSURES
-// ==========================================
 
-console.log("========== PART 5: PRIVATE DATA ==========");
+
+console.log("PART 5: PRIVATE DATA ");
 
 
 // Task 5.1 - Wallet
@@ -437,12 +432,8 @@ console.log(diary.read());
 // Private array cannot be accessed directly
 console.log(diary.entries);
 
-
-// ==========================================
 // PART 6 - CLOSURES IN LOOPS
-// ==========================================
-
-console.log("========== PART 6: CLOSURES IN LOOPS ==========");
+console.log(" PART 6: CLOSURES IN LOOPS ");
 
 
 // var example
@@ -501,13 +492,10 @@ for (let n = 1; n <= 3; n++) {
 
 }
 
-
-// ==========================================
 // PART 7 - MINI PROJECT
 // SMART WALLET WITH LOGIN GUARD
-// ==========================================
 
-console.log("========== PART 7: SMART WALLET ==========");
+console.log("PART 7: SMART WALLET ");
 
 
 // Main code is placed at the TOP of the project logic.
@@ -587,11 +575,9 @@ function createSmartWallet(start) {
 }
 
 
-// ==========================================
 // BONUS - DISCOUNT FACTORY
-// ==========================================
 
-console.log("========== BONUS ==========");
+console.log(" BONUS ");
 
 function makeDiscount(percent) {
 
@@ -606,12 +592,8 @@ const festive = makeDiscount(10);
 
 console.log("Discounted Price:", festive(500));
 
-
-// ==========================================
 // PART 8 - DEBUGGING CHALLENGE
-// ==========================================
-
-console.log("========== PART 8: DEBUGGING ==========");
+console.log(" PART 8: DEBUGGING");
 
 
 // Snippet 1

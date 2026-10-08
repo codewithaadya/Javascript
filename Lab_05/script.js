@@ -1,7 +1,4 @@
-// ==========================================
 // PART 1 - FUNCTION DECLARATION BASICS
-// ==========================================
-
 // Task 1.1 - isAdult()
 
 function isAdult(age) {
@@ -32,10 +29,7 @@ console.log("Task 1.2");
 console.log(calculateDiscount(1000, true));
 console.log(calculateDiscount(1000, false));
 
-
-// ==========================================
 // PART 2 - FUNCTION EXPRESSIONS & ARROW FUNCTIONS
-// ==========================================
 
 // Task 2.1 - isAdult as Function Expression
 
@@ -69,10 +63,7 @@ const fullName = (first, last) => first + " " + last;
 console.log("Task 2.3");
 console.log(fullName("Aadya", "Gupta"));
 
-
-// ==========================================
 // PART 3 - DEFAULT PARAMETERS & ARGUMENT MISMATCH
-// ==========================================
 
 // Task 3.1 - calculatePrice
 
@@ -102,11 +93,7 @@ console.log(calculateArea(5));
 // width becomes undefined because no second argument is provided.
 // Therefore, 5 * undefined results in NaN.
 
-
-// ==========================================
 // PART 4 - GLOBAL VS LOCAL SCOPE
-// ==========================================
-
 // Task 4.1
 
 let taxRate = 0.18;
@@ -138,10 +125,8 @@ console.log("Outside function:", storeName);
 // The local storeName only exists inside the function.
 // The global storeName remains unchanged.
 
-
-// ==========================================
 // PART 5 - BLOCK SCOPE: let VS var
-// ==========================================
+
 
 // Task 5.1 - let
 
@@ -181,11 +166,7 @@ console.log(
 // var is not block-scoped.
 // Therefore, it can be accessed outside the if block.
 
-
-// ==========================================
 // PART 6 - SCOPE CHAIN & SHADOWING
-// ==========================================
-
 // Task 6.1 - Nested Function
 
 function outerFunction() {
@@ -223,11 +204,8 @@ console.log("Global role:", role);
 
 // The local role does not change the global role.
 
-
-// ==========================================
 // PART 7 - MINI PROJECT
 // STUDENT GRADE & FEE MANAGER
-// ==========================================
 
 // Requirement 1
 let totalFeeCollected = 0;
@@ -296,15 +274,9 @@ console.log(
     totalFeeCollected
 );
 
-
-// ==========================================
 // PART 8 - DEBUGGING CHALLENGE
-// ==========================================
 
-
-// ------------------------------------------
 // Snippet 1
-// ------------------------------------------
 
 // Original problem:
 // function addNumbers(a, b) {
@@ -324,9 +296,9 @@ console.log("Snippet 1:");
 console.log(addNumbers(5, 3));
 
 
-// ------------------------------------------
+
 // Snippet 2
-// ------------------------------------------
+
 
 // Original problem:
 // function setDiscount() {
@@ -348,9 +320,7 @@ console.log("Snippet 2:");
 console.log(setDiscount());
 
 
-// ------------------------------------------
 // Snippet 3
-// ------------------------------------------
 
 // Original problem:
 // let balance = 1000;
@@ -382,9 +352,7 @@ console.log(withdraw(200));
 console.log(accountBalance);
 
 
-// ------------------------------------------
 // Snippet 4
-// ------------------------------------------
 
 // Original problem:
 // sayHello();

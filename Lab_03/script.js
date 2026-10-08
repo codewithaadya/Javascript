@@ -65,13 +65,12 @@ const freeShipping =
 
 // 7. Print the receipt
 
-console.log("========== RECEIPT ==========");
+console.log(" RECEIPT ");
 
 console.log(item1.name + " - ₹" + subtotal1);
 console.log(item2.name + " - ₹" + subtotal2);
 console.log(item3.name + " - ₹" + subtotal3);
 
-console.log("-----------------------------");
 
 console.log("Grand Total: ₹" + grandTotal);
 
@@ -98,4 +97,4 @@ console.log(
     (freeShipping ? "FREE" : "₹100 shipping charge")
 );
 
-console.log("=============================");
+

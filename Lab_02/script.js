@@ -1,6 +1,4 @@
-// ==========================================
 // PART 1 - SYNTAX WARM-UP
-// ==========================================
 
 console.log("My name is Aadya");
 console.log(5 + 5);
@@ -8,11 +6,7 @@ console.log(5 + 5);
 // This is a comment
 console.log("Comments don't run this part");
 
-
-// ==========================================
 // PART 2 - VARIABLES
-// ==========================================
-
 // Task 2.1
 let studentName = "Aadya";
 let rollNumber = 21;
@@ -46,10 +40,7 @@ if (true) {
 console.log(a);
 // console.log(b); // ReferenceError because b is block-scoped
 
-
-// ==========================================
 // PART 3 - DATA TYPES
-// ==========================================
 
 // Task 3.1
 
@@ -98,10 +89,7 @@ console.log(subjects[3]);
 
 console.log(typeof null);
 
-
-// ==========================================
 // PART 4 - OPERATORS & EXPRESSIONS
-// ==========================================
 
 // Task 4.1
 
@@ -154,11 +142,8 @@ passResult = studentMarks >= 40 ? "Pass" : "Fail";
 
 console.log(passResult);
 
-
-// ==========================================
 // PART 5 - MINI PROJECT
 // SIMPLE GRADE CALCULATOR
-// ==========================================
 
 let subject1 = 85;
 let subject2 = 80;
@@ -202,9 +187,7 @@ console.log(
 );
 
 
-// ==========================================
 // PART 6 - DEBUGGING PRACTICE
-// ==========================================
 
 // Snippet 1 - Corrected
 

@@ -1,9 +1,5 @@
-// ==========================================
 // PART 0 - FROM TERNARY TO IF-ELSE
-// ==========================================
-
-console.log("========== PART 0 ==========");
-
+console.log(" PART 0 ");
 // Old way - Ternary
 let marks = 68;
 
@@ -27,11 +23,11 @@ console.log("Both methods give the same answer.");
 console.log("I find if-else easier to read.");
 
 
-// ==========================================
-// PART 1 - IF STATEMENT
-// ==========================================
 
-console.log("========== PART 1 ==========");
+// PART 1 - IF STATEMENT
+
+
+console.log("PART 1 ");
 
 
 // Task 1.1
@@ -73,11 +69,11 @@ if (age3 >= 18) {
 }
 
 
-// ==========================================
-// PART 2 - IF-ELSE
-// ==========================================
 
-console.log("========== PART 2 ==========");
+// PART 2 - IF-ELSE
+
+
+console.log(" PART 2 ");
 
 
 // Task 2.1 - Even or Odd
@@ -144,11 +140,9 @@ if (passMarks >= 40) {
 console.log("I prefer if-else because it is easier to read.");
 
 
-// ==========================================
 // PART 3 - IF-ELSE-IF
-// ==========================================
 
-console.log("========== PART 3 ==========");
+console.log("PART 3 ");
 
 
 // Grade Example
@@ -293,13 +287,9 @@ if (temperature4 > 35) {
 } else {
     console.log("Very cold! Stay warm.");
 }
-
-
-// ==========================================
 // PART 4 - SWITCH-CASE
-// ==========================================
 
-console.log("========== PART 4 ==========");
+console.log(" PART 4 ");
 
 
 // Task 4.1 - Days of the Week
@@ -348,19 +338,19 @@ let mood = "happy";
 switch (mood) {
 
     case "happy":
-        console.log("😊 You are feeling happy!");
+        console.log(" You are feeling happy!");
         break;
 
     case "sad":
-        console.log("😢 It's okay to feel sad.");
+        console.log(" It's okay to feel sad.");
         break;
 
     case "angry":
-        console.log("😠 Take a deep breath and relax.");
+        console.log(" Take a deep breath and relax.");
         break;
 
     case "tired":
-        console.log("😴 You should take some rest.");
+        console.log(" You should take some rest.");
         break;
 
     default:
@@ -391,12 +381,9 @@ switch (testDay) {
 // Without break, JavaScript continues to the next case.
 // This is called fall-through.
 
-
-// ==========================================
 // PART 5 - MINI PROJECT: SIMPLE ATM
-// ==========================================
 
-console.log("========== PART 5 - ATM ==========");
+console.log(" PART 5 - ATM ");
 
 
 // Situation 1 - Wrong PIN
@@ -526,13 +513,8 @@ if (enteredPinATM3 === correctPinATM3) {
 
     console.log("Wrong PIN. Access Denied.");
 }
-
-
-// ==========================================
 // PART 6 - DEBUGGING CHALLENGE
-// ==========================================
-
-console.log("========== PART 6 - DEBUGGING ==========");
+console.log(" PART 6 - DEBUGGING ");
 
 
 // Snippet 1
@@ -558,7 +540,6 @@ if (debugAge === 18) {
 // === is comparison.
 
 
-// ------------------------------------------
 // Snippet 2
 
 let fruit = "apple";
@@ -586,8 +567,6 @@ switch (fruit) {
 // Explanation:
 // break was missing after the apple case.
 
-
-// ------------------------------------------
 // Snippet 3
 
 let choice = "2";
@@ -616,9 +595,4 @@ switch (choice) {
 // choice contains a String "2", so the case must also use "2".
 // switch uses strict comparison.
 
-
-// ==========================================
-// END OF LAB 04
-// ==========================================
-
-console.log("========== LAB 04 COMPLETED ==========");
+console.log("LAB 04 COMPLETED ");
