@@ -1,0 +1,737 @@
+/* ==========================================
+   JAVASCRIPT LABORATORY SHOWCASE
+   ========================================== */
+
+
+/* ---------- BASIC RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f8fc;
+    color: #172033;
+    line-height: 1.6;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 7%;
+
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #e5e7eb;
+
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.logo span {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    margin-right: 8px;
+
+    border-radius: 10px;
+
+    background: #172033;
+    color: white;
+
+    font-size: 14px;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 28px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #4b5563;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #172033;
+}
+
+.theme-btn {
+    border: none;
+    background: #eef0f5;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+    font-size: 17px;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 7%;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            #e7eaf5,
+            transparent 40%
+        ),
+        #f7f8fc;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.small-title,
+.section-label {
+    color: #687087;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 8vw, 90px);
+
+    line-height: 0.98;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 30px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #667085;
+}
+
+.hero-text {
+    max-width: 650px;
+
+    font-size: 18px;
+
+    color: #5d6678;
+
+    margin-bottom: 35px;
+}
+
+.student-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+
+    margin-bottom: 35px;
+}
+
+.student-info strong {
+    font-size: 12px;
+
+    color: #8a92a3;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.student-info p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+/* ---------- BUTTONS ---------- */
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 22px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: #172033;
+    color: white;
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+    background: #29344c;
+}
+
+.secondary-btn {
+    background: white;
+    color: #172033;
+
+    border: 1px solid #dce0e8;
+}
+
+.secondary-btn:hover {
+    transform: translateY(-3px);
+}
+
+
+/* ---------- GENERAL SECTION ---------- */
+
+.section {
+    padding: 100px 7%;
+}
+
+.section-heading {
+    max-width: 700px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+
+    line-height: 1.15;
+
+    margin-bottom: 15px;
+}
+
+.section-heading p {
+    color: #697386;
+}
+
+
+/* ---------- OBJECTIVES ---------- */
+
+.objective-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.objective-card {
+    padding: 30px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 16px;
+
+    transition: 0.3s;
+}
+
+.objective-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.07);
+}
+
+.icon {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+
+    background: #eef0f5;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.objective-card h3 {
+    margin-bottom: 10px;
+}
+
+.objective-card p {
+    color: #687386;
+
+    font-size: 14px;
+}
+
+
+/* ---------- LABS ---------- */
+
+.labs-section {
+    background: #eef0f5;
+}
+
+.lab-grid {
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.lab-card {
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    border: 1px solid #e0e3e9;
+
+    transition: 0.3s;
+}
+
+.lab-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.08);
+}
+
+.lab-number {
+    padding: 14px 22px;
+
+    background: #172033;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.lab-content {
+    padding: 28px;
+}
+
+.lab-content h3 {
+    font-size: 22px;
+
+    line-height: 1.3;
+
+    margin-bottom: 12px;
+}
+
+.lab-content > p {
+    color: #687386;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+}
+
+.tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-bottom: 22px;
+}
+
+.tags span {
+    padding: 5px 9px;
+
+    border-radius: 5px;
+
+    background: #f0f2f6;
+
+    color: #596274;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+.lab-details {
+    padding-top: 18px;
+
+    border-top: 1px solid #edf0f3;
+
+    margin-bottom: 25px;
+}
+
+.lab-details h4 {
+    font-size: 13px;
+
+    margin-bottom: 10px;
+}
+
+.lab-details ul {
+    padding-left: 18px;
+
+    color: #697386;
+
+    font-size: 13px;
+}
+
+.lab-details li {
+    margin-bottom: 5px;
+}
+
+.lab-button {
+    display: inline-block;
+
+    color: #172033;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.lab-button:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------- SKILLS ---------- */
+
+.skills-container {
+    max-width: 900px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.skill span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.progress {
+    height: 7px;
+
+    background: #e2e5eb;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.progress div {
+    height: 100%;
+
+    background: #172033;
+
+    border-radius: 20px;
+}
+
+
+/* ---------- LEARNING ---------- */
+
+.learning-section {
+    background: #172033;
+
+    color: white;
+}
+
+.learning-box {
+    max-width: 800px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.learning-box .section-label {
+    color: #aeb6c7;
+}
+
+.learning-box h2 {
+    font-size: 44px;
+
+    margin-bottom: 25px;
+}
+
+.learning-box p {
+    color: #c7ccd7;
+
+    margin-bottom: 15px;
+}
+
+
+/* ---------- GITHUB ---------- */
+
+.github-section {
+    padding: 100px 7%;
+
+    text-align: center;
+
+    background: #f7f8fc;
+}
+
+.github-content {
+    max-width: 700px;
+
+    margin: auto;
+}
+
+.github-content h2 {
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+.github-content > p {
+    color: #687386;
+
+    margin-bottom: 30px;
+}
+
+.github-btn {
+    background: #172033;
+
+    color: white;
+}
+
+.github-btn:hover {
+    transform: translateY(-3px);
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 25px 7%;
+
+    border-top: 1px solid #e1e4e9;
+
+    background: white;
+
+    color: #737b8c;
+
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   DARK MODE
+   ========================================== */
+
+body.dark-mode {
+    background: #101522;
+
+    color: #f2f4f7;
+}
+
+body.dark-mode .navbar {
+    background: rgba(16, 21, 34, 0.95);
+
+    border-color: #293142;
+}
+
+body.dark-mode .navbar nav a {
+    color: #b9c0cd;
+}
+
+body.dark-mode .navbar nav a:hover {
+    color: white;
+}
+
+body.dark-mode .hero {
+    background: #101522;
+}
+
+body.dark-mode .hero h1 span {
+    color: #aeb6c7;
+}
+
+body.dark-mode .hero-text {
+    color: #aeb6c7;
+}
+
+body.dark-mode .secondary-btn {
+    background: #1b2333;
+
+    color: white;
+
+    border-color: #30394c;
+}
+
+body.dark-mode .objective-card,
+body.dark-mode .lab-card {
+    background: #181f2d;
+
+    border-color: #2b3446;
+}
+
+body.dark-mode .objective-card p,
+body.dark-mode .lab-content > p,
+body.dark-mode .lab-details ul {
+    color: #aeb6c7;
+}
+
+body.dark-mode .icon,
+body.dark-mode .tags span {
+    background: #242d3e;
+
+    color: #c4cad5;
+}
+
+body.dark-mode .labs-section {
+    background: #141a27;
+}
+
+body.dark-mode .github-section {
+    background: #101522;
+}
+
+body.dark-mode footer {
+    background: #181f2d;
+
+    border-color: #2b3446;
+}
+
+
+/* ==========================================
+   RESPONSIVE DESIGN
+   ========================================== */
+
+@media (max-width: 1000px) {
+
+    .objective-grid,
+    .lab-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .navbar nav {
+        display: none;
+    }
+
+    .hero {
+        padding: 70px 6%;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+
+        letter-spacing: -2px;
+    }
+
+    .student-info {
+        gap: 20px;
+    }
+
+    .section {
+        padding: 70px 6%;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .objective-grid,
+    .lab-grid,
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+
+        gap: 8px;
+
+        text-align: center;
+    }
+
+}
